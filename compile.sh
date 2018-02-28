@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #Run the Script from the folder you are in...
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
