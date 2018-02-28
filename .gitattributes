@@ -1,1 +1,7 @@
-* text eol=lf
+*.md text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.sh text eol=lf
+*.html text eol=lf
+Makefile text eol=lf
+LICENSE text eol=lf
