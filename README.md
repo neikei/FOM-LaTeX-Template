@@ -6,12 +6,12 @@ Bitte schau in das originale [Repository](https://github.com/andygrunwald/FOM-La
 
 Die Aufrufe erfolgen über make und wurden unter Ubuntu 16.04 und der Ubuntu Bash für Windows getestet.
 
-| Aufruf       | Beschreibung                                         |
-|--------------|------------------------------------------------------|
-| make install | Installation der benötigten Abhängigkeiten           |
-| make build   | Führt die Aufrufe compile und cleanup aus            |
-| make compile | Kompiliert thesis_main.tex zu thesis_main.pdf        |
-| make cleanup | Räumt Dateien auf, die bei der Komilierung entstehen |
+| Aufruf       | Beschreibung                                          |
+|--------------|-------------------------------------------------------|
+| make install | Installation der benötigten Abhängigkeiten            |
+| make build   | Führt die Aufrufe compile und cleanup aus             |
+| make compile | Kompiliert thesis_main.tex zu thesis_main.pdf         |
+| make cleanup | Räumt Dateien auf, die bei der Kompilierung entstehen |
 
 ## Lizenz
 
