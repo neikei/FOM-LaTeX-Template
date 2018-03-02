@@ -10,7 +10,7 @@ help:
 build: compile cleanup
 
 install:
-	./tools/install_in_windows_bash.sh
+	./tools/install.sh
 
 compile:
 	./compile.sh
