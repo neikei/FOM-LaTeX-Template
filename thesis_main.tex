@@ -27,6 +27,11 @@
 \fontfamily{ptm}\selectfont
 \usepackage{ragged2e}
 
+% Überschreibe die pdflatex default Schriftart mit helvet
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
 % Mehrere Fussnoten nacheinander mit Komma separiert
 \usepackage[hang, multiple]{footmisc}
 \setlength{\footnotemargin}{1em}
