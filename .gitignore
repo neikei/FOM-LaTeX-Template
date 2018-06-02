@@ -18,3 +18,6 @@
 # IDEs
 .texpadtmp/
 .vscode/
+
+# Testing environment
+.vagrant/
