@@ -1,13 +1,14 @@
 .PHONY: help
 help:
-	@echo "make help    ==> print this message"
-	@echo "make build   ==> run the targets compile and cleanup"
-	@echo "make install ==> install required tools in bash (ubuntu bash)"
-	@echo "make compile ==> generate a pdf of the latex files"
-	@echo "make cleanup ==> clean up automatically generated files"
+	@echo "make help       ==> print this message"
+	@echo "make build      ==> run the targets compile and cleanup"
+	@echo "make install    ==> install required tools in bash (ubuntu bash)"
+	@echo "make compile    ==> generate a pdf of the latex files"
+	@echo "make cleanup    ==> clean up automatically generated files"
+	@echo "make countwords ==> count words in generated pdf"
 
 .PHONY: build
-build: compile cleanup
+build: compile cleanup countwords
 
 install:
 	./tools/install.sh
@@ -29,3 +30,7 @@ cleanup:
 	find . -name "*.out" -delete
 	find . -name "*.toc" -delete
 	find . -name "*.run.xml" -delete
+
+countwords:
+	@echo "Words ==> \c"
+	@pdftotext thesis_main.pdf - | tr " " "\n" | grep "^[A-Za-z]" | wc -w
